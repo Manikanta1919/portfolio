@@ -1644,6 +1644,17 @@ Developed and deployed cloud-based solutions using AWS services,ensuring scalabi
       });
   });
 </script>
+  <script>
+function toggleMenu() {
+  document.querySelector("nav ul").classList.toggle("active");
+}
+
+document.querySelectorAll("nav ul li a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.querySelector("nav ul").classList.remove("active");
+  });
+});
+</script>
 </body>
 </html>
 
